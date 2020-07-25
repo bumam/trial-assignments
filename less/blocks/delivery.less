@@ -1,0 +1,59 @@
+.delivery {
+  background-color: #f4f4f4;
+  padding: 1rem 0;
+  width: auto;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 2.9rem;
+  }
+
+  @media (min-width: @big-tablet-width) {
+    width: 79%;
+    margin-bottom: 5rem;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 63%;
+  }
+}
+
+.delivery__text {
+  margin: 0;
+  font-size: 1.3rem;
+  padding: .4rem 4.3rem;
+
+  @media (min-width: @tablet-width) {
+    padding: .4rem 5rem;
+  }
+}
+
+.delivery__text--instock::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/arrow-instock.png");
+  width: 1.4rem;
+  height: 1rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transform: translate(-2.8rem, 0.1rem);
+}
+
+.delivery__text--auto::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/delivery.png");
+  width: 1.7rem;
+  height: 1.3rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transform: translate(-2.8rem, 0.1rem);
+}
+
+.delivery__text a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

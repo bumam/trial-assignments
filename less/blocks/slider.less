@@ -1,0 +1,48 @@
+.slider {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: auto;
+  }
+}
+
+.slider__control {
+  margin: auto;
+  display: flex;
+  width: 50%;
+  width: 4rem;
+  height: 2.9rem;
+  background-color: white;
+  margin-top: 1rem;
+  border: 1px solid #ebebeb;
+  background-image: url("../img/arrow.png");
+  background-position: center;
+  background-size: 1.1rem .7rem;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.slider__img {
+  display: flex;
+  margin-bottom: 2rem;
+
+  @media (min-width: @big-tablet-width) {
+    margin-bottom: 3rem;
+  }
+}
+
+.slider__img img {
+  @media (min-width: @big-tablet-width) {
+    width: 90px;
+    height: 130px;
+  }
+}

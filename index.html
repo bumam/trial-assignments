@@ -1,14 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Trial assignments</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
 
-  <body>
-    <p>Hello</p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trial assignments</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="preload" href="./fonts/circe/circe_300.woff2" as="font" />
+</head>
+
+<body class="container">
+  <main>
+    <div class="container__mini card-img">
+      <div class="card-img__block slider">
+
+        <div class="slider__img"><img src="img/photo1.jpg" alt="item" width="80" height="116" /></div>
+        <div class="slider__img"><img src="img/photo2.jpg" alt="item" width="80" height="116" /></div>
+        <div class="slider__img"><img src="img/photo3.jpg" alt="item" width="80" height="116" /></div>
+        <button class="slider__control"></button>
+
+      </div>
+      <div class="card-img__block card-img__block--main-photo">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/main-photo-768.jpg" width="290" height="420">
+          <img src="img/main-photo.jpg" alt="item" width="242" height="351" />
+      </div>
+      </picture>
+
+    </div>
+    <div class="container__mini card-info">
+      <nav class="card-info__nav breadcrumbs">
+        <div class="breadcrumbs__wrapper">
+          <a href="#" class="breadcrumbs__point">Kаталог</a>
+          <a href="#" class="breadcrumbs__point">Женщинам</a>
+          <span class="breadcrumbs__point breadcrumbs__dots">...</span>
+          <a href="#" class="breadcrumbs__point breadcrumbs__point--shoes">Обувь</a>
+          <span class="breadcrumbs__page">Кроссовки</span>
+        </div>
+      </nav>
+      <h1 class="card-info__main-header">рубашка medicine</h1>
+      <div class="card-info__others">
+        <ul class="card-info__list">
+          <li class="card-info__item">
+            <a href="#">Рубашки Medicine</a>
+          </li>
+          <li class="card-info__item">
+            <a href="#">Все модели Medicine</a>
+          </li>
+          <li class="card-info__item">
+            <a href="#">Рубашки</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-info__price price">
+        <div class="price__block">
+          <p class="price__old-price">2 669</p>
+          <p class="price__current-price">2 469 ₽</p>
+        </div>
+        <div lass="price__block">
+          <p class="price__promo-price"><span>2 227 ₽</span> — с промокодом</p>
+        </div>
+      </div>
+      <div class="card-info__delivery delivery">
+        <p class="delivery__text delivery__text--instock"> В наличии в магазине <a
+            href="https://www.lamoda.ru">Lamoda</a></p>
+        <p class="delivery__text delivery__text--auto">Бесплатная доставка</p>
+      </div>
+      <div class="card-info__mini-wrapper">
+        <div class="card-info__description">
+          <p>Рубашка Medicine выполнена из вискозной ткани с клетчатым узором.</br> Детали: прямой крой; отложной воротник; планка и манжеты на пуговицах;
+            карман на груди.</p>
+        </div>
+        <div class="card-info__detail">
+          <p class="card-info__text-detail">Подробнее</p>
+        </div>
+        <div class="card-info__buttons buttons">
+          <a class="buttons__shop" href="#">В магазин</a>
+          <div class="buttons__wrapper">
+            <button class="buttons__favorite">В избранное</button>
+            <button class="buttons__share"></button>
+          </div>
+        </div>
+      </div>
+      <p class="card-info__social social">
+        <span class="social__share-text">Поделиться:</span>
+        <a class="social__link social__link--vk" href="#" aria-label="Перейти на нашу страницу в Вконтакте">
+        </a>
+        <a class="social__link social__link--google" href="#" aria-label="Перейти на нашу страницу в Гугл">
+        </a>
+        <a class="social__link social__link--fb" href="#" aria-label="Перейти на нашу страницу в Фейсбук">
+        </a>
+        <a class="social__link social__link--twitter" href="#" aria-label="Перейти на нашу страницу в Твиттер">
+        </a>
+
+        <span class="social__shared">123</span>
+        </a>
+      </p>
+    </div>
+  </main>
+</body>
+
 </html>

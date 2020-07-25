@@ -6,14 +6,12 @@ var gulp = require("gulp"),
   autoprefixer = require("autoprefixer"),
   imagemin = require("gulp-imagemin"),
   plumber = require("gulp-plumber"),
-  sourcemap = require("gulp-sourcemaps"),
   server = require("browser-sync").create();
 
 gulp.task("css", function () {
-  gulp
+  return gulp
     .src("./less/main.less")
     .pipe(plumber())
-    .pipe(gulpIf(sourcemap.init()))
     .pipe(
       less({
         strictMath: true,
@@ -43,11 +41,6 @@ gulp.task("image-min", () => {
     .pipe(gulp.dest("img/"));
 });
 
-gulp.task("refresh", function (done) {
-  server.reload();
-  done();
-});
-
 gulp.task("server", function () {
   server.init({
     server: "",
@@ -59,9 +52,8 @@ gulp.task("server", function () {
   });
 });
 
-gulp.task("watch", function () {
-  gulp.watch("./less/**/*.less", ["css"]);
-  gulp.watch("./*.html", ["refresh"]);
+gulp.task('watch', function () {
+  gulp.watch('./less/**/*.less', ['css']);
 });
 
-gulp.task("default", ("css", ["watch", "server"]));
+gulp.task("default", ["css", "server", "watch"]);

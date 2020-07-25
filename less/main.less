@@ -2,13 +2,60 @@
 
 @import "_fonts";
 
+@link-color: #4492ec;
+@btn-color: #006be5;
+@old-price: #d0cfcf;
+@current-price: #9a9b9b;
+@promo-price: #131313;
+
+@tablet-width: 768px;
+@big-tablet-width: 1000px;
+@desktop-width: 1410px;
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  font: 1.65rem/1.2 Circe, sans-serif;
+  font: 1.65rem/1.2 "Circe", sans-serif;
   font-weight: 300;
+  box-sizing: border-box;
+  min-width: 320px;
+  width: 100%;
+  max-width: 100%;
+}
+
+main {
+  max-width: 1190px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding: 2.2rem 2.9rem;
+  }
+
+  @media (min-width: @big-tablet-width) {
+    padding: 2.2rem 2.5rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box
 }
 
 @import "blocks/layout";
+@import "blocks/container";
+@import "blocks/card-info";
+@import "blocks/card-img";
+@import "blocks/slider";
+@import "blocks/breadcrumbs";
+@import "blocks/price";
+@import "blocks/social";
+@import "blocks/delivery";
+@import "blocks/buttons";

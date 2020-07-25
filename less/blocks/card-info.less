@@ -1,0 +1,131 @@
+.card-info {
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 69%;
+  }
+
+  @media (min-width: @big-tablet-width) {
+    width: 83%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 5.2rem;
+    width: 83.5%;
+  }
+}
+
+.card-info__item a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #006be5;
+    color: white;
+  }
+}
+
+.card-info__detail {
+  width: 100%;
+  border-top: 1px solid #eeefef;
+  border-bottom: 1px solid #eeefef;
+  margin-bottom: 1.5rem;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.card-info__text-detail {
+  padding: 1.4rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.05rem;
+}
+
+.card-info__text-detail::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/arrow.png");
+  width: 1.1rem;
+  height: .7rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  right: 5%;
+}
+
+.card-info__description {
+  padding: 0 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: .7rem;
+  white-space: pre-line;
+  line-height: normal;
+
+  @media (min-width: @tablet-width) {
+    white-space: normal;
+    padding: 0;
+    font-size: 1.3rem;
+    width: 100%;
+    letter-spacing: 0.01rem;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 90%;
+  }
+}
+
+.card-info__description p {
+  line-height: 1.8rem;
+  margin: 0;
+
+  @media (min-width: @big-tablet-width) {
+    margin-bottom: 1.8rem;
+  }
+}
+
+.card-info__list {
+  display: flex;
+  list-style: none;
+  padding: 0 1.3rem;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @big-tablet-width) {
+    margin-bottom: 4.2rem;
+  }
+}
+
+.card-info__item {
+  font-size: 1.3rem;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+}
+
+.card-info__main-header {
+  display: none;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: .12rem;
+  margin-bottom: 1.3rem;
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.card-info__mini-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 1.5rem;
+  }
+}

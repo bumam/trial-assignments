@@ -1,0 +1,107 @@
+.buttons__favorite {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 82%;
+  border: 2px solid #d8d8d8;
+  background-color: white;
+  font-weight: 600;
+  line-height: 1.3rem;
+  letter-spacing: 0.05rem;
+  padding: 1.2rem;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid @btn-color;
+    color: gray;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.buttons__share {
+  background-image: url("../img/share.png");
+  width: 1.4rem;
+  height: 2.4rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  background-color: white;
+  border: none;
+  margin: auto;
+  margin-right: .4rem;
+  margin-top: .6rem;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.buttons__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 48%;
+  }
+
+  @media (min-width: @big-tablet-width) {
+    width: 47%;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+  }
+
+  @media (min-width: @big-tablet-width) {
+    width: 82%;
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 92%;
+  }
+}
+
+.buttons__shop {
+  background-color: @btn-color;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 1.4rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1.6rem;
+  line-height: 1.3rem;
+  box-sizing: border-box;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 48%;
+  }
+
+  @media (min-width: @big-tablet-width) {
+    width: 47%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48.5%;
+  }
+}
